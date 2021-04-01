@@ -33,7 +33,7 @@ function fetchBooks() {
       .then(function(json) {
       console.log(json)
       });
-}
+
   function renderBooks(books) {
     const main = document.querySelector('main');
     books.forEach(book => {
@@ -46,3 +46,4 @@ function fetchBooks() {
   document.addEventListener('DOMContentLoaded', function() {
      return renderBooks(fetchBooks())
   });
+}
