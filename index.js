@@ -33,9 +33,10 @@ function fetchBooks() {
       .then(function(json) {
       console.log(json)
       });
-
+  }
   function renderBooks(books) {
     const main = document.querySelector('main');
+    console.log(books);
     books.forEach(book => {
       const h2 = document.createElement('h2');
       h2.innerHTML = book.name;
@@ -44,6 +45,5 @@ function fetchBooks() {
   }
   
   document.addEventListener('DOMContentLoaded', function() {
-     return renderBooks(fetchBooks())
+     return renderBooks(fetchBooks)
   });
-}
